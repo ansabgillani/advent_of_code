@@ -13,7 +13,7 @@ def count_max_calories_part_1():
             weights_carried.append(weight_sum)
             weight_sum = 0
 
-    print(max(weights_carried))
+    print(f"Answer to the first part: {max(weights_carried)}")
 
 
 
@@ -32,7 +32,7 @@ def count_max_calories_part_2():
     if weight_sum:
         weights_carried.append(weight_sum)
     weights_carried.sort()
-    print(weights_carried[-1] + weights_carried[-2] + weights_carried[-3])
+    print(f"Answer to the second part: {weights_carried[-1] + weights_carried[-2] + weights_carried[-3]}")
 
 
 count_max_calories_part_1()

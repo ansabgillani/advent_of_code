@@ -30,7 +30,7 @@ def rock_paper_scissor_part_1():
         else:
             point += 0
         total_points += point
-    print(total_points)
+    print(f"Answer to first part: {total_points}")
 
 
 def rock_paper_scissor_part_2():
@@ -70,7 +70,7 @@ def rock_paper_scissor_part_2():
             points += choice_points[choice_2]
         total_points += points
 
-    print(total_points)
+    print(f"Answer to second part: {total_points}")
 
 
 rock_paper_scissor_part_1()
