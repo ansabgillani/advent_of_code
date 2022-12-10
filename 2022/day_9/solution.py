@@ -19,7 +19,7 @@ class RopeBridge:
                 knots[0] += self.DIR[d]
 
                 for i, (h, t) in enumerate(zip(knots, knots[1:])):
-                    if abs(h.real - t.real) == 2 or abs(h.imag - t.imag) == 2:
+                    if abs(h.real - t.real) >= 2 or abs(h.imag - t.imag) >= 2:
                         if h.real != t.real:
                             t += (h.real - t.real) / abs(h.real - t.real)
                         if h.imag != t.imag:
